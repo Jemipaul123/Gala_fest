@@ -1,11 +1,10 @@
 import React,{useState} from 'react';
 import './navbar.css';
 
-import Vector from '../../assets/Vector.png' 
-import logo from '../../assets/logo.png' 
+
  
 const Navbar =() =>
-{ const [toggleMenu,setToggleMenu] =useState(false);
+{ 
     return(
         <div className="navbar">
             <div className='navbar-links'>
@@ -32,7 +31,7 @@ const Navbar =() =>
             </div>
             <div className='navbar-menu'>
             
-        {toggleMenu && (
+        {
         <div className="navbar-menu_container scale-up-center">
           <div className="navbar-menu_container-links">
             <p><a href="#home">Home</a></p>
@@ -47,7 +46,7 @@ const Navbar =() =>
             <button type="button">Sign up</button>
           </div>
         </div>
-        )}
+        }
 
             </div>
             
